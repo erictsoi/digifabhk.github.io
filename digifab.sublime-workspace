@@ -159,7 +159,11 @@
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
 	},
 	"distraction_free":
 	{
@@ -172,7 +176,6 @@
 	},
 	"file_history":
 	[
-		"/Users/denistsoi/Dropbox/github/digifab/index.html",
 		"/Users/denistsoi/Dropbox/Imagination/idd-pp/templates/whatson-front/whatson-front-style.css",
 		"/Users/denistsoi/Dropbox/Imagination/idd-pp/templates/shop-front/shop-front-style.css",
 		"/Users/denistsoi/Dropbox/Imagination/idd-pp/templates/shop-back/shop-back.css",
@@ -299,6 +302,7 @@
 		]
 	},
 	"menu_visible": true,
+	"project": "digifab.sublime-project",
 	"replace":
 	{
 		"height": 0.0
@@ -348,10 +352,24 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 440.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
