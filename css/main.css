@@ -196,9 +196,9 @@ table {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans/OpenSans-regular.ttf");
+  src: url("../fonts/open-sans/OpenSans-Regular.ttf");
   src: local("Open Sans");
-  src: url("../fonts/open-sans/OpenSans-regular.ttf") format("truetype"); }
+  src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Open Sans Bold";
@@ -245,7 +245,7 @@ h1 {
   margin: 0 auto; }
 
 main.container {
-  background: url("../img/Digifab.png");
+  /*background: url('../img/Digifab.png') */
   height: 3543px;
   width: 1024px;
   background-position-y: -15px; }
@@ -454,7 +454,7 @@ footer {
   .main-title {
     background-size: 100% 540px; } }
 main.container {
-  background: url("../img/Digifab.png");
+  /*background: url('../img/Digifab.png') */
   height: 3543px;
   width: 1024px;
   background-position-y: -15px; }
