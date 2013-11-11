@@ -1,0 +1,57 @@
+// *************************************
+//
+//  Digifab.hk
+//  layout-content/header.sass
+//
+//  Written by Denis Tsoi as part of Digifab.hk
+//  In Collaboration with Eric Tsoi for Digifab.hk
+//
+// *************************************
+
+header
+
+  // $header-height: 40px
+  position: fixed
+  height: $header-height
+  width: 100%
+  // background: black
+  color: white
+  +bgVG($dark-blue, $light-blue)
+  z-index: 80
+
+  
+
+  .logo
+    font-family: $second-font
+    position: absolute
+    display: block
+    height: $header-height
+    width: 100px
+    margin-left: 14px
+    left: $default-margin
+
+  .menu
+    position: absolute
+    right: $default-margin
+    display: inline-block
+    height: $header-height
+    width: 500px
+    padding: 0
+    li
+      display: inline-block
+
+  a
+    text-decoration: none
+    color: white
+    &:visited
+      color: white
+
+
+footer
+  section.footer-bottom
+    position: absolute
+    bottom: 0
+    .content
+      display: inline-block
+
+

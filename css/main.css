@@ -1,0 +1,668 @@
+@charset "UTF-8";
+/* ----------------- Welcome to Digifab.hk ------------------ */
+/*  ___    _          _    __          _          _      _    */
+/* |   \  (_)  __ _  (_)  / _|  __ _  | |__      | |_   | |__ */
+/* | |) | | | / _` | | | |  _| / _` | | '_ \  _  | ' \  | / / */
+/* |___/  |_| \__, | |_| |_|   \__,_| |_.__/ (_) |_||_| |_\_\ */
+/*            |___/                                           */
+/* -------------- Last Update on 21 Oct 2013 ---------------- */
+/*                                                            */
+/*! normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */
+/******************************************************************************
+ * HTML5 display definitions
+ ***************************************************************************** */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+/******************************************************************************
+ * Base
+ ***************************************************************************** */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+body, button, input, select, textarea {
+  font-family: sans-serif; }
+
+/******************************************************************************
+ * Links
+ ***************************************************************************** */
+a {
+  color: #0000ee; }
+  a:visited {
+    color: #551a8b; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+/******************************************************************************
+ * Typography
+ ***************************************************************************** */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: yellow;
+  color: black; }
+
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+  q:before, q:after {
+    content: "";
+    content: none; }
+
+small {
+  font-size: 75%; }
+
+blockquote {
+  margin: 1em 40px; }
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/******************************************************************************
+ * Lists
+ ***************************************************************************** */
+ul, ol {
+  margin: 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/******************************************************************************
+ * Embedded content
+ ***************************************************************************** */
+/* */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/******************************************************************************
+ * Figures
+ ***************************************************************************** */
+figure {
+  margin: 0; }
+
+/******************************************************************************
+ * Forms
+ ***************************************************************************** */
+form {
+  margin: 0; }
+
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  *margin-left: -7px; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal;
+  *overflow: visible; }
+
+table button, table input {
+  *overflow: auto; }
+
+button, html input[type="button"], html input[type="reset"], html input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/******************************************************************************
+ * Tables
+ ***************************************************************************** */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans/OpenSans-regular.ttf");
+  src: local("Open Sans");
+  src: url("../fonts/open-sans/OpenSans-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/open-sans/OpenSans-Bold.ttf");
+  src: local("Open Sans Bold");
+  src: url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Open Sans Bold Italic";
+  src: url("../fonts/open-sans/OpenSans-BoldItalic.ttf");
+  src: local("Open Sans Bold Italic");
+  src: url("../fonts/open-sans/OpenSans-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BebaeNeue";
+  src: url("../fonts/bebas-neue-regular/BebasNeue.otf");
+  src: local("BebaeNeue");
+  src: url("../fonts/bebas-neue-regular/BebasNeue.otf") format("opentype"); }
+
+html,
+body {
+  font-family: "Open Sans", "BebaeNeue", "Helvetica", "sans-serif";
+  font-size: 14px;
+  overflow: auto;
+  margin: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; }
+
+li {
+  padding: 0 7.5px; }
+
+.main-container {
+  background: white;
+  position: absolute;
+  display: block;
+  width: 1024px;
+  overflow: hidden;
+  font-family: "Open Sans", "BebaeNeue", "Helvetica", "sans-serif"; }
+
+h1 {
+  margin: 0 auto; }
+
+main.container {
+  /*background: url($path-images+'Digifab-1024-Recovered.png') */
+  height: 3543px;
+  width: 1024px;
+  background-position-y: -15px; }
+
+article {
+  display: block;
+  padding: 40px 70px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  article.main-title {
+    height: 510px; }
+  article.services {
+    height: 380px; }
+  article.aims {
+    height: 332px; }
+  article.what-print {
+    height: 343px; }
+  article.need-print {
+    height: 436px; }
+  article.attention {
+    height: 260px; }
+  article.about {
+    height: 540px; }
+  article.blog {
+    height: 570px; }
+  article.contact {
+    height: 720px; }
+
+header {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#1b1d32), to(#6981b1));
+  z-index: 80; }
+  header .logo {
+    font-family: "BebaeNeue";
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 100px;
+    margin-left: 14px;
+    left: 70px; }
+  header .menu {
+    position: absolute;
+    right: 70px;
+    display: inline-block;
+    height: 40px;
+    width: 500px;
+    padding: 0; }
+    header .menu li {
+      display: inline-block; }
+  header a {
+    text-decoration: none;
+    color: white; }
+    header a:visited {
+      color: white; }
+
+footer section.footer-bottom {
+  position: absolute;
+  bottom: 0; }
+  footer section.footer-bottom .content {
+    display: inline-block; }
+
+.main-title {
+  color: white;
+  background: url("../img/hongkong.png");
+  background-size: 1024px 540px;
+  background-repeat-y: no-repeat;
+  background-position-y: 40px;
+  padding: 0 70px;
+  border-bottom: 8px solid #35cc68; }
+  .main-title section.container {
+    background: rgba(0, 0, 0, 0.3);
+    width: 460px;
+    text-align: right;
+    position: absolute;
+    right: 90px;
+    top: 142px;
+    height: 275px; }
+    .main-title section.container summary, .main-title section.container .detail {
+      padding-right: 0.4em; }
+    .main-title section.container summary {
+      margin-bottom: 2em; }
+    .main-title section.container h1 {
+      display: block;
+      font-size: 1.5em;
+      margin: 0.5em 0; }
+    .main-title section.container .signup {
+      display: block;
+      height: 40px;
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      width: 340px;
+      float: right;
+      height: 55px; }
+      .main-title section.container .signup span {
+        float: left;
+        padding: 10px;
+        text-align: center; }
+      .main-title section.container .signup span:first-of-type {
+        width: 200px;
+        background: #35cc68; }
+      .main-title section.container .signup span:last-of-type {
+        width: 100px;
+        background: #339967; }
+      .main-title section.container .signup span:hover {
+        background: red; }
+
+.services {
+  padding: 53px 70px 40px; }
+  .services .title {
+    text-align: center;
+    font-size: 2em;
+    font-family: "BebaeNeue"; }
+  .services .description {
+    font-size: 1.2em;
+    width: 700px;
+    margin: 0 auto; }
+    .services .description span {
+      font-family: "Open Sans Bold Italic";
+      text-decoration: underline; }
+    .services .description span.bold {
+      font-family: "Open Sans Bold";
+      text-decoration: none; }
+
+.aims {
+  padding: 40px 110px; }
+  .aims .col-3 {
+    width: calc(100% / 3);
+    height: 252px;
+    text-align: center;
+    float: left;
+    /*background: red */ }
+    .aims .col-3 .aim-title {
+      font-family: "BebaeNeue";
+      font-size: 2.5em;
+      margin-top: 0.4em; }
+    .aims .col-3 .logo {
+      height: 74px; }
+
+.what-print h2 {
+  margin: 0 auto;
+  font-size: 2.5em;
+  font-family: "bebaeNeue";
+  text-align: center; }
+.what-print p {
+  text-align: center;
+  color: blue;
+  font-size: 1.25em;
+  margin-top: 0.6em; }
+
+.need-print {
+  padding-top: 0; }
+
+.attention {
+  color: white;
+  font-family: "BebaeNeue";
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#1b1d32), to(#6981b1)); }
+  .attention .title {
+    font-size: 2.5em;
+    margin: 0 auto;
+    margin-top: 26px; }
+  .attention nav.signup {
+    display: block;
+    height: 40px;
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .attention span {
+    display: inline-block;
+    padding: 10px;
+    text-align: center; }
+  .attention span:first-of-type {
+    width: 200px;
+    background: #35cc68; }
+  .attention span:last-of-type {
+    width: 100px;
+    margin-left: -6px;
+    background: #339967; }
+  .attention span:hover {
+    background: red; }
+
+.about {
+  padding-top: 36px; }
+  .about .title {
+    font-family: "BebaeNeue";
+    font-size: 2.5em;
+    text-align: center;
+    height: 96px;
+    width: 800px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
+
+@media screen and (min-width: 1025px) {
+  main.container {
+    width: 100%; }
+
+  .main-title {
+    background-size: 100% 540px; } }
+main.container {
+  /*background: url($path-images+'Digifab-1024-Recovered.png') */
+  height: 3543px;
+  width: 1024px;
+  background-position-y: -15px; }
+
+article {
+  display: block;
+  padding: 40px 70px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  article.main-title {
+    height: 510px; }
+  article.services {
+    height: 380px; }
+  article.aims {
+    height: 332px; }
+  article.what-print {
+    height: 343px; }
+  article.need-print {
+    height: 436px; }
+  article.attention {
+    height: 260px; }
+  article.about {
+    height: 540px; }
+  article.blog {
+    height: 570px; }
+  article.contact {
+    height: 720px; }
+
+header {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#1b1d32), to(#6981b1));
+  z-index: 80; }
+  header .logo {
+    font-family: "BebaeNeue";
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 100px;
+    margin-left: 14px;
+    left: 70px; }
+  header .menu {
+    position: absolute;
+    right: 70px;
+    display: inline-block;
+    height: 40px;
+    width: 500px;
+    padding: 0; }
+    header .menu li {
+      display: inline-block; }
+  header a {
+    text-decoration: none;
+    color: white; }
+    header a:visited {
+      color: white; }
+
+footer section.footer-bottom {
+  position: absolute;
+  bottom: 0; }
+  footer section.footer-bottom .content {
+    display: inline-block; }
+
+.main-title {
+  color: white;
+  background: url("../img/hongkong.png");
+  background-size: 1024px 540px;
+  background-repeat-y: no-repeat;
+  background-position-y: 40px;
+  padding: 0 70px;
+  border-bottom: 8px solid #35cc68; }
+  .main-title section.container {
+    background: rgba(0, 0, 0, 0.3);
+    width: 460px;
+    text-align: right;
+    position: absolute;
+    right: 90px;
+    top: 142px;
+    height: 275px; }
+    .main-title section.container summary, .main-title section.container .detail {
+      padding-right: 0.4em; }
+    .main-title section.container summary {
+      margin-bottom: 2em; }
+    .main-title section.container h1 {
+      display: block;
+      font-size: 1.5em;
+      margin: 0.5em 0; }
+    .main-title section.container .signup {
+      display: block;
+      height: 40px;
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      width: 340px;
+      float: right;
+      height: 55px; }
+      .main-title section.container .signup span {
+        float: left;
+        padding: 10px;
+        text-align: center; }
+      .main-title section.container .signup span:first-of-type {
+        width: 200px;
+        background: #35cc68; }
+      .main-title section.container .signup span:last-of-type {
+        width: 100px;
+        background: #339967; }
+      .main-title section.container .signup span:hover {
+        background: red; }
+
+.services {
+  padding: 53px 70px 40px; }
+  .services .title {
+    text-align: center;
+    font-size: 2em;
+    font-family: "BebaeNeue"; }
+  .services .description {
+    font-size: 1.2em;
+    width: 700px;
+    margin: 0 auto; }
+    .services .description span {
+      font-family: "Open Sans Bold Italic";
+      text-decoration: underline; }
+    .services .description span.bold {
+      font-family: "Open Sans Bold";
+      text-decoration: none; }
+
+.aims {
+  padding: 40px 110px; }
+  .aims .col-3 {
+    width: calc(100% / 3);
+    height: 252px;
+    text-align: center;
+    float: left;
+    /*background: red */ }
+    .aims .col-3 .aim-title {
+      font-family: "BebaeNeue";
+      font-size: 2.5em;
+      margin-top: 0.4em; }
+    .aims .col-3 .logo {
+      height: 74px; }
+
+.what-print h2 {
+  margin: 0 auto;
+  font-size: 2.5em;
+  font-family: "bebaeNeue";
+  text-align: center; }
+.what-print p {
+  text-align: center;
+  color: blue;
+  font-size: 1.25em;
+  margin-top: 0.6em; }
+
+.need-print {
+  padding-top: 0; }
+
+.attention {
+  color: white;
+  font-family: "BebaeNeue";
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#1b1d32), to(#6981b1)); }
+  .attention .title {
+    font-size: 2.5em;
+    margin: 0 auto;
+    margin-top: 26px; }
+  .attention nav.signup {
+    display: block;
+    height: 40px;
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .attention span {
+    display: inline-block;
+    padding: 10px;
+    text-align: center; }
+  .attention span:first-of-type {
+    width: 200px;
+    background: #35cc68; }
+  .attention span:last-of-type {
+    width: 100px;
+    margin-left: -6px;
+    background: #339967; }
+  .attention span:hover {
+    background: red; }
+
+.about {
+  padding-top: 36px; }
+  .about .title {
+    font-family: "BebaeNeue";
+    font-size: 2.5em;
+    text-align: center;
+    height: 96px;
+    width: 800px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
+
+@media screen and (min-width: 1025px) {
+  main.container {
+    width: 100%; }
+
+  .main-title {
+    background-size: 100% 540px; } }
+.title {
+  font-family: "BebaeNeue";
+  font-size: 2.5em;
+  text-align: center; }

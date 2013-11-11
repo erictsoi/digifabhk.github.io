@@ -1,0 +1,80 @@
+// *************************************
+//
+//  Digifab.hk
+//  core/settings/settings.sass
+//
+//  Written by Denis Tsoi as part of Digifab.hk
+//  In Collaboration with Eric Tsoi for Digifab.hk
+//
+// *************************************
+
+// Paths
+$path-images: '../img/'
+$path-fonts: '../fonts/'
+
+$path-fonts-opensans: $path-fonts+'open-sans/'
+$path-fonts-bebas: $path-fonts+'bebas-neue-regular/'
+
+
+// Properties
+$base-width: 100%
+$base-width-px: 1024px
+// $base-height: 100%
+// $base-height-px: 1080px
+
+// -- Color -- //
+
+$dark-blue:   #1b1d32
+$dark-green:  #339967
+
+$light-blue:  #6981b1
+$light-green: #35cc68
+
+
+// -- Font -- //
+$base-font: 'Open Sans'
+$base-font-filename: 'OpenSans-regular.ttf'
+
+$base-font-bold: 'Open Sans Bold'
+$base-font-bold-filename: 'OpenSans-Bold.ttf'
+
+$base-font-bold-italic: 'Open Sans Bold Italic'
+$base-font-bold-italic-filename: 'OpenSans-BoldItalic.ttf'
+
+$second-font: 'BebaeNeue'
+$second-font-filename: 'BebasNeue.otf'
+
+
+// TODO Make into Mixin
+// -- Open Sans -- //
+@font-face
+	font-family: $base-font
+	src: url($path-fonts-opensans + $base-font-filename)
+	src: local($base-font)
+	src: url($path-fonts-opensans + $base-font-filename) format('truetype')
+
+// Open Sans Bold
+@font-face
+	font-family: $base-font-bold
+	src: url($path-fonts-opensans + $base-font-bold-filename)
+	src: local($base-font-bold)
+	src: url($path-fonts-opensans + $base-font-bold-filename) format('truetype')
+
+// Open Sans BoldItalic
+@font-face
+	font-family: $base-font-bold-italic
+	src: url($path-fonts-opensans + $base-font-bold-italic-filename)
+	src: local($base-font-bold-italic)
+	src: url($path-fonts-opensans + $base-font-bold-italic-filename) format('truetype')
+
+
+// BebasNeue
+@font-face
+	font-family: $second-font
+	src: url($path-fonts-bebas + $second-font-filename)
+	src: local($second-font)
+	src: url($path-fonts-bebas + $second-font-filename) format('opentype')
+
+
+
+

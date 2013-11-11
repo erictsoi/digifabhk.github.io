@@ -1,0 +1,59 @@
+// *************************************
+//
+//  Digifab.hk
+//  layout-content/settings.sass
+//
+//  Written by Denis Tsoi as part of Digifab.hk
+//  In Collaboration with Eric Tsoi for Digifab.hk
+//
+// *************************************
+
+// -- Default Margins -- //
+
+$default-margin: 70px
+$inner-margin:   25px
+
+// -- Article Heights -- //
+$header-height:      40px
+$main-title-height: 470px    
+$services-height:   380px
+$aim-height:        332px
+$what-print-height: 343px
+$need-print-height: 436px
+$attention-height:  260px
+$about-height:      540px
+$blog-height:       570px
+$contact-height:    720px
+
+main.container
+  /*background: url($path-images+'Digifab-1024-Recovered.png')*/
+  height: 3543px
+  width: 1024px
+  background-position-y: -15px
+
+article
+  display: block
+  padding: 40px $default-margin
+  position: relative
+  +box
+
+  
+  &.main-title
+    // height: $default-margin + $main-title-height
+    height: $header-height + $main-title-height
+  &.services
+    height:  $services-height
+  &.aims
+    height:  $aim-height
+  &.what-print
+    height:  $what-print-height
+  &.need-print
+    height:  $need-print-height
+  &.attention
+    height:  $attention-height
+  &.about
+    height:  $about-height
+  &.blog
+    height:  $blog-height
+  &.contact
+    height:  $contact-height

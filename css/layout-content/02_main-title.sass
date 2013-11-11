@@ -1,0 +1,71 @@
+// *************************************
+//
+//  Digifab.hk
+//  layout-content/header.sass
+//
+//  Written by Denis Tsoi as part of Digifab.hk
+//  In Collaboration with Eric Tsoi for Digifab.hk
+//
+// *************************************
+
+.main-title
+  color: white
+  // $inner-margin: $default-margin + 26px
+  // $upper-margin: $default-margin + 110px
+  background: url($path-images + 'hongkong.png')
+  background-size: $base-width-px $main-title-height+$default-margin
+  background-repeat-y: no-repeat
+  background-position-y: $header-height
+  padding: 0 $default-margin
+
+  border-bottom: 8px solid $light-green
+  
+  section.container
+    $section-container-width:        460px
+    $section-container-height:       275px
+    $section-container-upper-margin: 142px
+    background: rgba(0,0,0,.3)
+    width: $section-container-width
+    // height: $main-title-height
+
+    text-align: right
+    position: absolute
+    right: $default-margin + 20
+    top:   $section-container-upper-margin
+    height: $section-container-height
+    
+    summary, .detail
+      padding-right: .4em
+    summary
+      margin-bottom: 2em
+    h1
+      display: block
+      font-size: 1.5em
+      margin: .5em 0
+
+    .signup
+      display: block
+      // width: 310px
+      height: 40px
+      font-family: "Impact", "Charcoal", sans-serif
+      font-size: 2em
+      text-transform: uppercase
+      letter-spacing: 1px
+      width: 340px
+      float: right
+      height: 55px
+      span
+        float: left
+        padding: 10px
+        text-align: center
+      span:first-of-type
+        width: 200px
+        background: $light-green
+      span:last-of-type
+        width: 100px
+        background: $dark-green
+
+      span:hover
+        background: red
+
+
