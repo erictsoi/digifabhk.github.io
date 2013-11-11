@@ -196,9 +196,9 @@ table {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans/OpenSans-Regular.ttf");
+  src: url("../fonts/open-sans/OpenSans-regular.ttf");
   src: local("Open Sans");
-  src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype"); }
+  src: url("../fonts/open-sans/OpenSans-regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Open Sans Bold";
@@ -245,7 +245,7 @@ h1 {
   margin: 0 auto; }
 
 main.container {
-  /*background: url($path-images+'Digifab.png') */
+  background: url("../img/Digifab.png");
   height: 3543px;
   width: 1024px;
   background-position-y: -15px; }
@@ -307,12 +307,6 @@ header {
     color: white; }
     header a:visited {
       color: white; }
-
-footer section.footer-bottom {
-  position: absolute;
-  bottom: 0; }
-  footer section.footer-bottom .content {
-    display: inline-block; }
 
 .main-title {
   color: white;
@@ -446,6 +440,12 @@ footer section.footer-bottom {
     height: 96px;
     width: 800px;
     border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
+
+footer {
+  background: #35cc68;
+  padding-left: 100px; }
+  footer .content {
+    display: inline-block; }
 
 @media screen and (min-width: 1025px) {
   main.container {
@@ -454,7 +454,7 @@ footer section.footer-bottom {
   .main-title {
     background-size: 100% 540px; } }
 main.container {
-  /*background: url($path-images+'Digifab.png') */
+  background: url("../img/Digifab.png");
   height: 3543px;
   width: 1024px;
   background-position-y: -15px; }
@@ -516,12 +516,6 @@ header {
     color: white; }
     header a:visited {
       color: white; }
-
-footer section.footer-bottom {
-  position: absolute;
-  bottom: 0; }
-  footer section.footer-bottom .content {
-    display: inline-block; }
 
 .main-title {
   color: white;
@@ -655,6 +649,12 @@ footer section.footer-bottom {
     height: 96px;
     width: 800px;
     border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
+
+footer {
+  background: #35cc68;
+  padding-left: 100px; }
+  footer .content {
+    display: inline-block; }
 
 @media screen and (min-width: 1025px) {
   main.container {
