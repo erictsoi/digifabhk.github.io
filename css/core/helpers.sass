@@ -10,6 +10,11 @@
 
 =bgVG ($start, $end)
   background: -webkit-gradient(linear, left top, right top, from($start), to($end))
+=link
+  text-decoration: none
+  &:visited, &:active
+    color: inherit
+
 =box($type: border-box)
   box-sizing: $type
   -moz-box-sizing: $type
