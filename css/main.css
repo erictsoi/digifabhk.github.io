@@ -244,6 +244,10 @@ li {
 h1 {
   margin: 0 auto; }
 
+.signup .signup-button, .signup .signup-button:visited {
+  color: white;
+  text-decoration: none; }
+
 main.container {
   width: 1024px;
   background-position-y: -15px; }
